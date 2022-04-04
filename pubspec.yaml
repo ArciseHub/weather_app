@@ -22,6 +22,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  fonts:
+    - family: montserrat
+      fonts:
+        - asset: assets/fonts/montserrat-regular.ttf
+        - asset: assets/fonts/montserrat-bold.ttf
+
   assets:
     - assets/images/cloud/
     - assets/images/lightning/
