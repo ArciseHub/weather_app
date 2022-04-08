@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 class CustomColors {
   Color backgroundColor = const Color(0xff111114);
+  Color backgroundColorTwo = const Color(0xff121214);
+  Color textColorBlueGrey = const Color(0xff4f565e);
   Color weeklyWeatherForecastColor = const Color(0xff191B1F);
   Color weatherConditionColor = const Color(0xff1a1b1f);
   Color todayForecastBackgroundColor = const Color(0xff18181c);

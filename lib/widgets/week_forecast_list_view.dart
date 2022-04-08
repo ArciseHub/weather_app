@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/utilities/colors.dart';
 
 class WeekForecastListViewWidget extends StatelessWidget {
   const WeekForecastListViewWidget(
@@ -17,24 +18,24 @@ class WeekForecastListViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(28, 12.5, 28, 12.5),
+      padding: const EdgeInsets.fromLTRB(28, 15, 28, 15),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
             weekDay,
-            style: const TextStyle(
-              color: Colors.grey,
+            style: TextStyle(
+              color: CustomColors().textColorBlueGrey,
               fontFamily: 'montserrat',
               fontWeight: FontWeight.normal,
-              fontSize: 22,
+              fontSize: 18,
             ),
           ),
           Row(
             children: [
               Image(
-                height: 40,
-                width: 40,
+                height: 30,
+                width: 30,
                 image: AssetImage(
                   weatherIcon,
                 ),
@@ -42,11 +43,11 @@ class WeekForecastListViewWidget extends StatelessWidget {
               const SizedBox(width: 5),
               Text(
                 weatherType,
-                style: const TextStyle(
-                  color: Colors.grey,
+                style: TextStyle(
+                  color: CustomColors().textColorBlueGrey,
                   fontFamily: 'montserrat',
                   fontWeight: FontWeight.normal,
-                  fontSize: 22,
+                  fontSize: 18,
                 ),
               ),
             ],
@@ -59,17 +60,17 @@ class WeekForecastListViewWidget extends StatelessWidget {
                   color: Colors.white,
                   fontFamily: 'montserrat',
                   fontWeight: FontWeight.normal,
-                  fontSize: 22,
+                  fontSize: 18,
                 ),
               ),
               const SizedBox(width: 5),
               Text(
                 "$lowestTemperature\u00B0",
-                style: const TextStyle(
-                  color: Colors.grey,
+                style: TextStyle(
+                  color: CustomColors().textColorBlueGrey,
                   fontFamily: 'montserrat',
                   fontWeight: FontWeight.normal,
-                  fontSize: 22,
+                  fontSize: 18,
                 ),
               ),
             ],

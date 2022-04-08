@@ -3,14 +3,23 @@ import 'package:weather_app/utilities/colors.dart';
 import 'package:weather_app/widgets/weather_condition_component.dart';
 
 class WeatherCondition extends StatelessWidget {
-  const WeatherCondition({Key? key}) : super(key: key);
+  const WeatherCondition({
+    Key? key,
+    required this.headline1,
+    required this.headline2,
+    required this.headline3,
+  }) : super(key: key);
+
+  final String headline1;
+  final String headline2;
+  final String headline3;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(22),
+      padding: const EdgeInsets.all(20),
       child: Container(
-        height: 90,
+        height: 92.5,
         width: double.infinity,
         decoration: BoxDecoration(
           color: CustomColors().weatherConditionColor,
@@ -19,9 +28,9 @@ class WeatherCondition extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const WeatherConditionComponent(
-              image: 'assets/images/lightning/lightning.png',
-              headline: '13 km/h',
+            WeatherConditionComponent(
+              image: 'assets/images/wind/wind1.png',
+              headline: '$headline1 km/h',
               subtitle: 'Wind',
               paddingLeft: 37.5,
             ),
@@ -30,9 +39,9 @@ class WeatherCondition extends StatelessWidget {
               child: VerticalDivider(
                   width: 1, thickness: 1, color: Colors.grey.shade800),
             ),
-            const WeatherConditionComponent(
-              image: 'assets/images/lightning/lightning.png',
-              headline: '22%',
+            WeatherConditionComponent(
+              image: 'assets/images/rain/rain_drop.png',
+              headline: '$headline2%',
               subtitle: 'Humidity',
             ),
             Padding(
@@ -40,9 +49,9 @@ class WeatherCondition extends StatelessWidget {
               child: VerticalDivider(
                   width: 1, thickness: 1, color: Colors.grey.shade800),
             ),
-            const WeatherConditionComponent(
-              image: 'assets/images/lightning/lightning.png',
-              headline: '87%',
+            WeatherConditionComponent(
+              image: 'assets/images/rain/rainy.png',
+              headline: '$headline3%',
               subtitle: 'Rain',
               paddingRight: 42.5,
             ),

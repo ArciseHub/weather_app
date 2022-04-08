@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/utilities/colors.dart';
 
 class WeatherConditionComponent extends StatelessWidget {
   const WeatherConditionComponent(
@@ -37,13 +38,14 @@ class WeatherConditionComponent extends StatelessWidget {
               fontSize: 14,
             ),
           ),
+          const SizedBox(height: 2.5),
           Text(
             subtitle,
-            style: const TextStyle(
-              color: Colors.grey,
+            style: TextStyle(
+              color: CustomColors().textColorBlueGrey,
               fontFamily: 'montserrat',
               fontWeight: FontWeight.bold,
-              fontSize: 12,
+              fontSize: 14,
             ),
           ),
         ],

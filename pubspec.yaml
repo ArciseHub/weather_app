@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  http: any
+  intl: any
+  provider: ^6.0.2
 
 dev_dependencies:
   flutter_test:
@@ -36,3 +39,4 @@ flutter:
     - assets/images/snow/
     - assets/images/star/
     - assets/images/sun/
+    - assets/images/wind/
